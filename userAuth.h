@@ -25,7 +25,7 @@ typedef int bool;
 
 char *userToken;
 char currentUser[128];
-
+//char gitOrigin[1000];
 
 void gitCloudPull();
 void gitCloudPush();
@@ -38,11 +38,8 @@ void destroyArray(char **ptr, int row);
 int listOfFile(char *location);
 
 
-
 void gitCloudPull(){
-
     system("git pull");
-
 }
 
 void gitCloudPush(){

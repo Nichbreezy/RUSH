@@ -4,6 +4,7 @@
 
 int main(){
 
+system("git config --get remote.origin.url > gitorigin.txt");
 system("clear");
 printf("%sUNIX FINAL PROJECT - Zanif Sandy\n\n",RUSH);
 // struct User_ account_user;

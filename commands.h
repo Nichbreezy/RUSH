@@ -19,7 +19,7 @@ void run_command_list() {
             puts(GRN);
             system("pwd");
             puts(RESET);
-
+            
             run_command_list();
         }
 
