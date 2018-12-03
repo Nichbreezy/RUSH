@@ -3,18 +3,14 @@
 
 
 char fileSystem[20];
-
-
-
 #include "userAuth.h"
 
 void run_command_list() {
 
         char input_command[128]; 
-
         printf("%s%s",userToken,OPEN_INDICATOR);
         scanf("%s",input_command);    
-     
+        
         if(checker(input_command,"where")) {
             puts(GRN);
             system("pwd");
@@ -45,7 +41,6 @@ void run_command_list() {
                  
                  run_command_list();
             }
-        
         }
         else if (checker(input_command ,"exit")){
             gitCloudPush();
